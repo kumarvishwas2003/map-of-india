@@ -1,0 +1,662 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.map-container {
+  color: black;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* z-index: -1; */
+}
+.para {
+  font-size: xx-large;
+}
+.map {
+  background-image: url("images/india.png");
+  width: 700px;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: 600px;
+  background-position: center;
+  /* z-index: -1; */
+}
+.box {
+  height: 30px;
+  width: 30px;
+  overflow: hidden;
+  color: transparent;
+  background-color: transparent;
+  position: absolute;
+  z-index: 10;
+}
+.kashmir {
+  height: 45px;
+  width: 60px;
+  margin-top: 60px;
+  margin-left: 211px;
+  /* background-color:transparent; */
+  color: transparent;
+  cursor: pointer;
+}
+.kashmir:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: Black;
+  z-index: 20;
+}
+
+.himachalpradesh {
+  height: 27px;
+  width: 27px;
+  margin-top: 125px;
+  margin-left: 237px;
+  /* background-color:transparent; */
+  color: transparent;
+  cursor: pointer;
+}
+
+.himachalpradesh:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: Black;
+  z-index: 20;
+}
+
+.punjab {
+  height: 27px;
+  width: 27px;
+  margin-top: 154px;
+  margin-left: 204px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.punjab:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: Black;
+  z-index: 20;
+}
+
+.uttarakhand {
+  height: 27px;
+  width: 32px;
+  margin-top: 167px;
+  margin-left: 277px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.uttarakhand:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: Black;
+  z-index: 20;
+}
+
+.haryana {
+  height: 23px;
+  width: 24px;
+  margin-top: 190px;
+  margin-left: 220px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.haryana:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: Black;
+  z-index: 20;
+}
+
+.rajasthan {
+  height: 56px;
+  width: 79px;
+  margin-top: 233px;
+  margin-left: 143px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.rajasthan:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: Black;
+  z-index: 20;
+}
+
+.uttarpradesh {
+  height: 51px;
+  width: 60px;
+  margin-top: 235px;
+  margin-left: 295px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.uttarpradesh:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: Black;
+  z-index: 20;
+}
+
+/* CSS for Madhya Pradesh */
+.madhyapradesh {
+  height: 51px;
+  width: 60px;
+  margin-top: 321px;
+  margin-left: 249px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.madhyapradesh:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  z-index: 20;
+}
+
+/* CSS for Bihar */
+.bihar {
+  height: 35px;
+  width: 60px;
+  margin-top: 268px;
+  margin-left: 390px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.bihar:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  z-index: 20;
+}
+
+/* CSS for Jharkhand */
+.jharkhand {
+  height: 28px;
+  width: 31px;
+  margin-top: 317px;
+  margin-left: 395px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.jharkhand:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  z-index: 20;
+}
+
+/* CSS for Gujarat */
+.gujarat {
+  height: 42px;
+  width: 46px;
+  margin-top: 320px;
+  margin-left: 112px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.gujarat:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  z-index: 20;
+}
+
+/* CSS for Maharashtra */
+.maharashtra {
+  height: 55px;
+  width: 71px;
+  margin-top: 390px;
+  margin-left: 179px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.maharashtra:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  z-index: 20;
+}
+
+/* CSS for Telangana and Odisha */
+.telangana {
+  height: 37px;
+  width: 45px;
+  margin-top: 434px;
+  margin-left: 260px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.telangana:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  z-index: 20;
+}
+
+.odisha {
+  height: 37px;
+  width: 47px;
+  margin-top: 372px;
+  margin-left: 390px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.odisha:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  z-index: 20;
+}
+
+/* CSS for Karnataka, Andhra Pradesh, and Tamil Nadu */
+.karnataka {
+  height: 39px;
+  width: 44px;
+  margin-top: 512px;
+  margin-left: 190px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.karnataka:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  z-index: 20;
+}
+
+.andhrapradesh {
+  height: 39px;
+  width: 47px;
+  margin-top: 505px;
+  margin-left: 260px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.andhrapradesh:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  z-index: 20;
+}
+
+.tamilnadu {
+  height: 38px;
+  width: 50px;
+  margin-top: 592px;
+  margin-left: 251px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.tamilnadu:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  z-index: 20;
+}
+
+/* CSS for Chhattisgarh and Kerala */
+.chhattisgarh {
+  height: 32px;
+  width: 45px;
+  margin-top: 365px;
+  margin-left: 330px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.chhattisgarh:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  z-index: 20;
+}
+
+.kerala {
+  height: 55px;
+  width: 36px;
+  margin-top: 601px;
+  margin-left: 199px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.kerala:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  z-index: 20;
+}
+
+/* CSS for West Bengal, Sikkim, Assam, Meghalaya, and Tripura */
+.westbengal {
+  height: 31px;
+  width: 42px;
+  margin-top: 318px;
+  margin-left: 443px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.westbengal:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  z-index: 20;
+}
+
+.sikkim {
+  height: 13px;
+  width: 23px;
+  margin-top: 227px;
+  margin-left: 459px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.sikkim:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  z-index: 20;
+}
+
+.assam {
+  height: 23px;
+  width: 45px;
+  margin-top: 241px;
+  margin-left: 526px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.assam:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  z-index: 20;
+}
+
+.meghalaya {
+  height: 18px;
+  width: 38px;
+  margin-top: 263px;
+  margin-left: 505px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.meghalaya:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  z-index: 20;
+}
+
+.tripura {
+  height: 22px;
+  width: 19px;
+  margin-top: 305px;
+  margin-left: 526px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.tripura:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  z-index: 20;
+}
+
+/* CSS for Mizoram, Manipur, Nagaland, and Arunachal Pradesh */
+.mizoram {
+  height: 48px px;
+  width: 16px;
+  margin-top: 306px;
+  margin-left: 556px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.mizoram:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  z-index: 20;
+}
+
+.manipur {
+  height: 28px;
+  width: 24px;
+  margin-top: 273px;
+  margin-left: 571px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.manipur:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  z-index: 20;
+}
+
+.nagaland {
+  height: 23px;
+  width: 24px;
+  margin-top: 240px;
+  margin-left: 580px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.nagaland:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  z-index: 20;
+}
+
+.arunachalpradesh {
+  height: 26px;
+  width: 42px;
+  margin-top: 187px;
+  margin-left: 576px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.arunachalpradesh:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  z-index: 20;
+}
+
+/* CSS for Delhi, Daman and Diu, and Goa */
+.delhi {
+  height: 12px;
+  width: 10px;
+  margin-top: 208px;
+  margin-left: 248px;
+  background-color: pink;
+  color: transparent;
+  cursor: pointer;
+}
+
+.delhi:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  z-index: 20;
+}
+
+.damananddiu {
+  height: 10px;
+  width: 10px;
+  margin-top: 385px;
+  margin-left: 114px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.damananddiu:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  z-index: 20;
+}
+
+.goa {
+  height: 20px;
+  width: 16px;
+  margin-top: 499px;
+  margin-left: 167px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.goa:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  z-index: 20;
+}
+
+/* CSS for Lakshadweep */
+.lakshadweep {
+  height: 82px;
+  width: 60px;
+  margin-top: 573px;
+  margin-left: 121px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.lakshadweep:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  z-index: 20;
+}
+
+/* CSS for Andaman and Nicobar Islands */
+.andamannicobar {
+  height: 187px;
+  width: 60px;
+  margin-top: 503px;
+  margin-left: 563px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.andamannicobar:hover {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  z-index: 20;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 15px;
+  border-radius: 80px;
+}
+.text-bold {
+  font-weight: bold;
+}
+
